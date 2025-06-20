@@ -40,3 +40,21 @@ print(Name.capitalize())  # Output: Yashvi
 print(Name.upper())  # Output: YASHVI
 print(Name.lower())  # Output: yashvi
 print(Name.swapcase())  # Output: yashVI
+
+x = 'This is a very good ball'
+print(x.replace("is", "was")) #Output: Thwas was a very good ball
+print(x.replace("is", "was", 1)) #It will replace only once because 1 is given
+# Output: 'Thwas is a very good ball'
+
+print(":".join(x))
+# Output: T:h:i:s: :i:s: :a: :v:e:r:y: :g:o:o:d: :b:a:l:l
+
+# Usage of the split() method.
+split1 = "Line1-abcdef Line2-abc Line3-xyz \nLine4-abcd"
+print(split1)
+# Output: Line1-abcdef Line2-abc 
+#         Line4-abcd
+print(split1.split())
+# Output: ['Line1-abcdef', 'Line2-abc', 'Line3-xyz', 'Line4-abcd']
+print(split1.split(' ', 2 ))
+# Output: ['Line1-abcdef', 'Line2-abc', 'Line3-xyz \nLine4-abcd']

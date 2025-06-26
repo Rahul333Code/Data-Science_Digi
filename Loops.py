@@ -1,5 +1,4 @@
 # LOOPS
-#LOOPS
 
 # For loops
 snacks = ['Pizza', 'Burger', 'Shawarma', 'Franky']
@@ -58,3 +57,15 @@ for i in names:  # Iterates through each name in the list.
   if len(i) == 3:  # Checks if the length of the name is 3 characters.
     break  # Exits the loop if the length is 3.
   print(f'My name is {i}')  # Prints the name if its length is not 3.
+
+  # Recursive function - Calling function within a function.
+def fact(N):
+    if N < 0:
+        print("Input the positive number") 
+    elif N == 0:
+        print(f'Factorial of {N}! is {1}')
+    elif N == 1: 
+        return 1  
+    else:
+        return (N * fact(N-1))
+fact(5)
